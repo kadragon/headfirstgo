@@ -7,9 +7,9 @@ import (
 	"github.com/kadragon/headfirstgo/datafile"
 )
 
-func main() {
+func Average() {
 	// numbers := [3]float64{71.8, 56.2, 89.5}
-	numbers, err := datafile.GetFloats("data.txt")
+	numbers, err := datafile.GetFloats("./average/data.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
