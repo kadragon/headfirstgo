@@ -1,0 +1,26 @@
+package main
+
+import (
+	"fmt"
+
+	"github.com/kadragon/headfirstgo/magazine"
+)
+
+func main() {
+	var s magazine.Subscriber
+	s.Rate = 4.99
+	fmt.Println(s.Rate)
+
+	employee := magazine.Employee{Name: "Joy Carr", Salary: 60000}
+	fmt.Printf("%#v", employee)
+	fmt.Println()
+
+	address := magazine.Address{Street: "123, Oak St", City: "Omaha", State: "NE", PostalCode: "68111"}
+	subscriber := magazine.Subscriber{Name: "Aman Singh", HomeAddress: address}
+	fmt.Printf("%#v", subscriber)
+	fmt.Println()
+
+	emp := magazine.Employee2{Name: "K", Salary: 100000, Address: address}
+	fmt.Println(emp.Address.City)
+	fmt.Println(emp.PostalCode)
+}
